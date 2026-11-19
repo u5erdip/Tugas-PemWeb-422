@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontak | Catatan Harian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">Catatan Harian</a>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="kontak.html" class="active">Kontak</a>
+      <button id="tema" class="icon-btn" aria-label="Ganti tema">🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Ada saran atau pertanyaan? Kirim pesan.</h1>
+      <p>Isi formulir di bawah. Semua kolom wajib diisi.</p>
+    </section>
+
+    <section class="panel">
+      <form id="form-kontak" novalidate>
+        <label for="nama">Nama</label>
+        <input id="nama" type="text" placeholder="Nama lengkap">
+        <small class="error" id="err-nama"></small>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="nama@email.com">
+        <small class="error" id="err-email"></small>
+
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" rows="5" placeholder="Tulis pesan kamu (minimal 10 karakter)"></textarea>
+        <small class="error" id="err-pesan"></small>
+
+        <button type="submit" class="btn">Kirim pesan</button>
+        <p id="sukses" class="success" hidden></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2026 Catatan Harian</footer>
+  <script src="script.js"></script>
+</body>
+</html>

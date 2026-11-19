@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beranda | Catatan Harian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">Catatan Harian</a>
+    <nav>
+      <a href="index.html" class="active">Beranda</a>
+      <a href="kontak.html">Kontak</a>
+      <button id="tema" class="icon-btn" aria-label="Ganti tema">🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Tulis yang perlu dikerjakan, centang kalau sudah selesai.</h1>
+      <p>Daftar tugas sederhana yang berjalan di browser. Tidak perlu akun.</p>
+    </section>
+
+    <section class="panel">
+      <form id="form-tugas" class="row">
+        <input id="input-tugas" type="text" placeholder="Contoh: kerjakan laporan praktikum" aria-label="Tugas baru" required>
+        <button type="submit" class="btn">Tambah tugas</button>
+      </form>
+
+      <button id="btn-api" type="button" class="btn btn-sekunder">Ambil contoh tugas dari API</button>
+      <p id="status-api" class="muted" role="status"></p>
+
+      <p id="ringkasan" class="muted">Belum ada tugas. Tambahkan yang pertama di atas.</p>
+      <ul id="daftar" class="list"></ul>
+    </section>
+  </main>
+
+  <footer>© 2026 Catatan Harian</footer>
+  <script src="script.js"></script>
+</body>
+</html>
